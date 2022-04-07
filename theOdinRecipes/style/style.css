@@ -1,0 +1,44 @@
+*{
+    font-family: helvetica;
+
+}
+
+body{
+    font-size: 18px;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+
+img{
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+}
+p,
+ol,
+ul {
+    width: 430px;
+}
+
+h1,
+h2,
+h3,
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn{
+    height: 30px;
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(205, 178, 231);
+    border: black 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 8px;
+}

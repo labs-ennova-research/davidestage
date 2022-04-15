@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90vw;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+  }
+  .img {
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin: 1% 1% 1% 1%;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+ .img2{
+     display: flex;
+
+ }
+
+  .img-description {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 100%;
+    color: rgb(228, 207, 207);
+    font-weight: 900;
+    padding: 10px;
+  }
+  
+  .form {
+    width: 70%;
+    height: auto;
+    margin-left: 8%;
+    padding: 0px;
+  }
+  .form > * {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .form-label {
+    font-weight: 1000;
+    font-size: 10px;
+    display: block;
+  }
+  
+  .form-input {
+    border: 2px solid gray;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    margin-top: 5%;
+    padding-right: 10%;
+  }
+  .form-input:focus {
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+  }
+
+  form {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    width: 80%;
+    margin-left: 0%;
+    background-color: rgba(0, 0, 0, 0.034);
+  }
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+  .inputs > :last-child {
+    padding-left: 15%;
+  }
+  .form-end {
+    margin-top: 50px;
+    position: absolute;
+    font-size: 10px;
+  }
+  
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 6px;
+    border: none;
+    font-size: 30px;
+    background: #009900;
+    color: #dfdedf;
+    cursor: pointer;
+  }
+  .btn:hover {
+    box-shadow: inset 0px 0.8px 1px -0.25px rgba(255, 255, 255, 0.2),
+      0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  }
+  .login {
+    color: #009900;
+  }
+  
+  .img-logo {
+    width: 10%;
+    height: fit-content;
+    position: fixed;
+    margin-left: 50px;
+    margin-top: 5%;
+    background-color: none;
+  }
+  .odin-img {
+    width: 100%;
+  }

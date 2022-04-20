@@ -1,0 +1,34 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+h1{
+    text-align:center;
+}
+.child{
+    width: 90%;
+    height:300px;
+    box-shadow: 2px;
+    background:black;
+    color:white;
+    margin:5px 0px 5px 0px;
+    padding: 10px;
+    text-align:center;
+    display:block;
+}
+button{
+    padding:20px;
+}
+.add{
+    margin:10px 0px 0px 20px;
+}
+.hide{
+    display : none;
+    margin : 50px;
+    
+}
+.submit{
+    padding:20px;
+}

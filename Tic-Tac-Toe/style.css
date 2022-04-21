@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+:root{
+    font-size: 16px;
+    --mark-size: 90%;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --board-color: #000000;
+    --player-move: #000000;
+    --selected-cells: #ebbec4;
+}
+
+body > h1{
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    height: 100vh;
+}
+
+.game-container{
+    z-index: 2;
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cell{
+    height: 100%;
+    width: 100%;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.selected-cells{
+    background-color: var(--selected-cells);
+}
+
+.cell:hover{
+    cursor: pointer;
+}
+
+.display-winner{
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 10;
+}
+
+.display-winner.active{
+    transition: 350ms;
+    opacity: 1;
+}
+
+.winner{
+    height: 100px;
+    width: 250px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.reset{
+    font-family: 'roboto', sans-serif;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.reset:hover{
+    transition: 200ms;
+    transform: scale(1.4);
+}

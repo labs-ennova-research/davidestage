@@ -1,0 +1,22 @@
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th>Evento</th>
+            <th>Data</th>
+            <th>Luogo</th>
+            <th>Ora</th>
+            <th>Durata</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let event of eventi" scope="row">
+            <td Highlight [durata]="event.durationInHours">{{event.name}} </td>
+            <td Highlight [durata]="event.durationInHours">{{event.date}} </td>
+            <td Highlight [durata]="event.durationInHours">{{event.location | location}} </td>
+            <td Highlight [durata]="event.durationInHours">{{event.time}} </td>
+            <td Highlight [durata]="event.durationInHours">{{event.durationInHours}} </td>
+            <td Highlight [durata]="event.durationInHours"><button>Elimina</button></td>
+        </tr>
+
+    </tbody>
